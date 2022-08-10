@@ -54,7 +54,8 @@ function oilPrice(diesel, petrol, octane) {
 
 
 function publicBusFare(number) {
-    if( number > 50){
+    if(typeof number === 'number'){
+      if( number > 50){
         let number2 = number % 50 ;
         if(number2 <= 11){
             return number2 * 250;
@@ -67,11 +68,15 @@ function publicBusFare(number) {
     else {
         return 0;
     }
+    }
+    else{
+      return "Please enter a valid number!!"
+    }
     
     };
 
 
-console.log(publicBusFare(204));
+// console.log(publicBusFare(75));
 
 //5
 
