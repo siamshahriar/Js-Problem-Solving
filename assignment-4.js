@@ -57,7 +57,7 @@ function publicBusFare(number) {
     if(typeof number === 'number'){
       if( number > 50){
         let number2 = number % 50 ;
-        if(number2 <= 11){
+        if(number2 < 11){
             return number2 * 250;
         }
         else{
@@ -76,7 +76,7 @@ function publicBusFare(number) {
     };
 
 
-// console.log(publicBusFare(75));
+// console.log(publicBusFare(111));
 
 //5
 
